@@ -1,0 +1,33 @@
+platform :ios, '8.0'
+use_frameworks!
+
+target 'CardManager' do
+        #数据库
+        pod 'RealmSwift'
+        #约束
+        pod 'SnapKit','~> 4.0.0'
+        #json转model
+        pod 'SwiftyJSON'
+        #rac
+        pod 'ReactiveCocoa', '~> 7.0'
+        #数据为nil 处理
+        pod 'DZNEmptyDataSet'
+        #颜色框架
+#        pod 'ChameleonFramework/Swift'
+        #权限授权
+#        pod 'PermissionScope'
+        #欢迎页
+        pod 'Onboard'
+        #时间转换
+        pod 'Timepiece'
+        #虽然不使用，学习
+#        pod 'Alamofire', '~> 4.5'
+        #优美UI
+        pod 'Material'
+        #刷新
+        pod 'MJRefresh'
+        #键盘
+        pod 'IQKeyboardManagerSwift'
+        #jsontomodel
+        pod 'SwiftyJSON'
+end

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CMHomeFooterView" customModule="CardManager" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OnQ-Tl-mNa">
+                    <rect key="frame" x="0.0" y="0.0" width="187" height="60"/>
+                    <state key="normal" title="添加提醒">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXU-fR-ogE">
+                    <rect key="frame" x="188" y="0.0" width="187" height="60"/>
+                    <state key="normal" title="查看全部">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="heb-kp-hj9">
+                    <rect key="frame" x="187" y="0.0" width="1" height="60"/>
+                    <color key="backgroundColor" red="0.59999999999999998" green="0.63529411759999999" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="6vb-3b-tjY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.18039215689999999" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="gXU-fR-ogE" secondAttribute="trailing" id="01d-Ru-MCI"/>
+                <constraint firstItem="gXU-fR-ogE" firstAttribute="leading" secondItem="heb-kp-hj9" secondAttribute="trailing" id="3Kk-n5-L87"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="OnQ-Tl-mNa" secondAttribute="bottom" id="7S0-Mj-MyJ"/>
+                <constraint firstItem="gXU-fR-ogE" firstAttribute="width" secondItem="OnQ-Tl-mNa" secondAttribute="width" id="A3N-rR-w7y"/>
+                <constraint firstItem="gXU-fR-ogE" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Dad-be-RKa"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="gXU-fR-ogE" secondAttribute="bottom" id="JaD-Vb-iAL"/>
+                <constraint firstItem="OnQ-Tl-mNa" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Juu-Bg-XrL"/>
+                <constraint firstItem="heb-kp-hj9" firstAttribute="leading" secondItem="OnQ-Tl-mNa" secondAttribute="trailing" id="Kzo-dQ-Jsg"/>
+                <constraint firstItem="heb-kp-hj9" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="WU3-MF-nmK"/>
+                <constraint firstItem="heb-kp-hj9" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Xds-gu-cGZ"/>
+                <constraint firstItem="heb-kp-hj9" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="kZL-NH-xtQ"/>
+                <constraint firstItem="OnQ-Tl-mNa" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="rnd-op-UK9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="addButton" destination="OnQ-Tl-mNa" id="XxF-KO-los"/>
+                <outlet property="showAllButton" destination="gXU-fR-ogE" id="KEe-ts-cB1"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="54"/>
+        </view>
+    </objects>
+</document>
